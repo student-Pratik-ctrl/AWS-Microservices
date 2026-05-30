@@ -16,8 +16,6 @@ Each service serves its own web page using Apache HTTP Server (httpd) on Amazon 
 
 # **1. Architecture Overview**
 
-![Architecture Diagram](/Images/Architecture-Diagram.png)
-
 ### Architecture Flow
 
 ![](./img/microservice.png)
@@ -124,8 +122,6 @@ echo "<h1>This is Laptop Page $(hostname -f)</h1>" > /var/www/html/laptop/index.
 
 Launch Template : `Home-LT`
 
-Scaling Policy : `Dynamic Scaling`
-
 Desired Capacity : `1`
 
 Minimum Capacity : `2`
@@ -147,8 +143,6 @@ Maximum Capacity : `4`
 
 Launch Template : `Mobile-LT`
 
-Scaling Policy : `Scheduled Scaling`
-
 Desired Capacity : `2`
 
 Minimum Capacity : `2`
@@ -167,7 +161,7 @@ Maximum Capacity : `2`
 
 Launch Template : `Laptop-LT`
 
-Scaling Policy : `Dynamic Scaling`
+
 
 Desired Capacity : `1`
 
